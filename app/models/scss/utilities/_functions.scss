@@ -1,0 +1,14 @@
+// return font-size  px or rem
+@function fz($px) {
+    @if ($px <=14) {
+        @return round($px)+px;
+    }
+    @else {
+        @return $px/16+rem;
+    }
+}
+
+// return size rem
+@function sz($px) {
+    @return $px/16+rem;
+}
